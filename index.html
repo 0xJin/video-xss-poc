@@ -14,9 +14,10 @@
 
     <script>
         document.getElementById('myVideo').addEventListener('play', function () {
-            alert('XSS executed!');
-            console.log(document.cookie);
+            alert(document.cookie);
+            console.log('JavaScript executed');
         });
     </script>
 </body>
 </html>
+
